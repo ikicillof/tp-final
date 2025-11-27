@@ -1,0 +1,101 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../imagenes/maquina-del-tiempo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec1 {
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.subSec1 {
+    display: flex;
+    height: 10%;
+    align-items: center;
+    gap: 20px;
+}
+
+.subSec1 img {
+    width: 45px;     /* tamaño uniforme y fijo */
+    height: 45px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    object-fit: contain;
+}
+
+.subSec1 img:hover {
+    opacity: 0.6;
+}
+
+.logoNintendo {
+    display: flex;
+    height: 30%;
+}
+
+.contenedor-login,
+.contenedor-contacto {
+    position: relative;
+}
+
+.hover-login,
+.hover-contacto {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contenedor-login:hover .hover-login,
+.contenedor-contacto:hover .hover-contacto {
+    display: flex;
+}
+
+.hover-login input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+}
+
+.hover-contacto p {
+    margin: 0;
+}
+
+.sec2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.sec2 a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px burlywood;
+    padding: 10px 50px;
+    border-radius: 30px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.sec2 a:hover {
+    transition: all 0.5s ease;
+    transform: scale(1.05);
+}

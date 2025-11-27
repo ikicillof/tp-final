@@ -1,0 +1,74 @@
+body {
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../imagenes/año2010.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    justify-content: space-around;
+}
+
+body > div {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: flex-end;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botones a {
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.botones a:hover {
+    opacity: 0.4;
+    transition: all 0.3s ease;
+}
+
+.volver {
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+body .regreso {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 0 20px;
+        background-size: contain;
+        background-repeat: repeat;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .botones a {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    body > div {
+        height: auto;
+        align-items: center;
+    }
+}
