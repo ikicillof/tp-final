@@ -2,7 +2,7 @@ body {
     padding: 0 100px;
     display: flex;
     flex-direction: column;
-    background-image: url("../imagenes/año2010.png");
+    background-image: url("../imagenes/imagen2010.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
